@@ -1,0 +1,13 @@
+.header{
+    display:flex;
+    justify-content: space-around;
+    height: 80px;
+    background: antiquewhite;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+}
+.header a{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+}

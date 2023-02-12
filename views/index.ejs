@@ -1,0 +1,23 @@
+<%- include("header") -%>
+    <h1>My blog Blog</h1>
+
+    <% items.forEach(function(blog){%>
+        <h1>
+            <%= blog.id %>
+        </h1>
+        <h2>
+            <%= blog.blogname %>
+        </h2>
+        <p>
+            <%= blog.description.substring(0, 30) %>
+        </p>
+        <a href="/posts/<%= blog.id %>">Read More</a><br>
+        <a href="/post/delete/<%= blog.id %>">Delete</a>
+        <% }); %>
+            <form method="POST">
+                <!-- <input type="text" name="id" > -->
+                <input type="text" placeholder="Blog Title" name="post">
+                <textarea type="text" name="postdesc" placeholder="Description"></textarea>
+                <button type="submit">submit</button>
+            </form>
+            <%- include("footer") -%>

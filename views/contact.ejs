@@ -1,0 +1,22 @@
+<%- include("header") -%>
+    <h1>Contact Us</h1>
+
+    <form method="POST">
+        <div> <label>Full Name</label>
+            <input type="text" name="fullname">
+        </div>
+        <div> <label>Phone Number</label>
+            <input type="number" name="phone">
+        </div>
+        <div> <label>email</label>
+            <input type="email" name="email">
+        </div>
+        <!-- <div> <label>email</label>
+            <input type="email" name="email">
+        </div> -->
+        <div> <label>Message</label>
+            <textarea name="message"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <%- include("footer") -%>
